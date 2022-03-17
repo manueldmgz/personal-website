@@ -1,0 +1,141 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root{
+    --dark: #0A1869;
+    --medium: #8597FF;
+    --light: #4C5CB5;
+    --yellow: #FCEFC2;
+    --gold: #E3B82D;
+}
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height:100%;
+  }
+body {
+    background-color:rgb(26, 36, 71);  
+    color:var(--yellow);
+    letter-spacing: 2px;
+    width: 100%;
+    height:100%;
+    font-family: 'Montserrat', sans-serif;
+}
+article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+header, main, footer {
+    flex-shrink: 0;
+}
+/* Inicio de Header */
+/* Header dividido en tres secciones */
+header{
+    background-color: var(--light);
+    display: flex;
+    gap:50px;
+    align-items: center;
+}
+.title{
+    flex-basis: 75%;
+}
+h1 > a{
+    color: var(--yellow);
+    text-decoration: none;
+    text-shadow: 
+    2px 2px #0A1869, 
+    1px 0 0 black;
+}
+h1{
+    font-family: 'Days One', sans-serif;
+    margin-left:7%;
+    font-size: 2.7rem;
+}
+/* boton From cssbuttons.io */
+button {
+    align-items: center;
+    background-image: linear-gradient(144deg,var(--medium), #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    /* font-family: Phantomsans, sans-serif; */
+    font-size: 18px;
+    justify-content: center;
+    line-height: 3em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+   }
+   button:active,
+   button:hover {
+    outline: 0;
+   } 
+   button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+   }
+   
+   button:hover span {
+    background: none;
+   }
+   
+   button:active {
+    transform: scale(0.9);
+   }
+/* .switch{
+    margin-right:20px;
+}
+.switch > p{
+    font-family: 'Days One', sans-serif;
+    font-size: 1.2rem;
+} */
+/* Fin de Header */
+main{
+    flex-grow: 1;
+}
+/* Inicio de Footer */
+.lista-contacto{
+    list-style-type: none;
+    margin: 0 auto;
+}
+footer{
+    background-color:var(--light);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width:37%;
+    height:90px;
+    margin: 0 auto;
+    display:flex;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height:32px;
+    font-family: 'Bebas Neue', cursive;
+}
+ul{
+    display: inline-flex;
+    gap: 50px;
+    padding:34px;
+}
+li > a{
+    letter-spacing: 0.7px;
+    text-decoration: none;
+    color: var(--yellow);
+}
+/* Fin de Footer */

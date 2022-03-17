@@ -1,0 +1,114 @@
+@import "basics.css";
+:root{
+    --dark: #0A1869;
+    --medium: #8597FF;
+    --light: #4C5CB5;
+    --yellow: #FCEFC2;
+    --gold: #E3B82D;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#tituloCallejon{
+    margin-top:10px
+}
+.titulos{
+    text-decoration: none;
+    color: var(--yellow);
+    border: none;
+    background: none;
+}
+.titulos:hover{
+    /* text-decoration: underline 1.5px var(--gold); */
+    letter-spacing: 2.5px;
+}
+.proyecto{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 320px 450px 40px;
+    column-gap:15px;
+    row-gap: 58px;
+}
+h4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size:2.7rem;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    margin-bottom: -15px;
+    margin-top:165px;
+}
+img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width:40%;
+    height:70%;
+    margin: 15px auto;
+}
+#buenaonda{
+    width:60%;
+    height:80%; 
+    filter:brightness(110%)
+}
+#foto-mappack{
+    border-radius: 40px;
+    filter:brightness(90%);
+    width:60%;
+    height:80%; 
+}
+.linktexto{
+    text-decoration: none;
+    color:var(--yellow);
+}
+.linktexto:hover{
+    text-decoration: underline;
+}
+p{
+    font-size:1.3rem;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin: 0 auto;
+    overflow:hidden;
+}
+iframe{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.botones{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+.a-btn{
+    color: var(--dark);
+    background: var(--gold);
+    padding: 18px;  
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    align-self: center;
+}
+.a-btn:hover{
+    opacity: 96%;
+    transform: scale(1.04);
+    filter: drop-shadow(1.5px 1.5px 8px #E3B82D);
+}
+footer{
+    margin-top:200px;
+}
+
