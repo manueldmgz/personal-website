@@ -90,12 +90,13 @@ img:hover{
 }
 
 #btn-form{
-    margin-left: 500px;
+    /* margin-left: 370px; */
     max-width: 80%;
     min-width: 150px;
     padding: 3px;
     font-size: 18px;
     line-height: 1em;
+    margin: 0 auto;
 }
 
 #btn-form span{

@@ -10,15 +10,14 @@ h3:hover{
     letter-spacing: 3px;
 }
 main{
-    width: 87%;
-    margin: 0 auto;
 }
 .container{
     display:grid;
     row-gap:50px;
     grid-template-columns: repeat(3, 1fr);
-    width:100%;
+    width:80%;
     margin: 0 200px;
+    justify-items: center;
 }
 .uno,.dos,.tres,.cuatro,.cinco,.seis,.siete,.ocho,.nueve,.diez,.once,.doce{
     background-color: var(--gold);
