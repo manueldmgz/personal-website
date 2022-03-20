@@ -1,7 +1,10 @@
 *,
-*:before,
-*:after {
-  box-sizing: inherit;
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 :root{
     --dark: #0A1869;
@@ -39,6 +42,7 @@ header{
     display: flex;
     gap:50px;
     align-items: center;
+    height:120px;
 }
 .title{
     flex-basis: 75%;
@@ -58,7 +62,7 @@ h1{
 /* boton From cssbuttons.io */
 button {
     align-items: center;
-    background-image: linear-gradient(144deg,var(--medium), #5B42F3 50%,#00DDEB);
+    background-image: linear-gradient(144deg,var(--medium), #5B42F3 50%,#78D3FF);
     border: 0;
     border-radius: 8px;
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -82,6 +86,7 @@ button {
    button:active,
    button:hover {
     outline: 0;
+    animation: 1s moverx 1 alternate;
    } 
    button span {
     background-color: rgb(5, 6, 45);
@@ -127,6 +132,7 @@ footer{
     text-align: justify;
     line-height:32px;
     font-family: 'Bebas Neue', cursive;
+    overflow: visible;
 }
 ul{
     display: inline-flex;
@@ -138,4 +144,29 @@ li > a{
     text-decoration: none;
     color: var(--yellow);
 }
+footer > ul > li > a:hover{
+    background-color: var(--dark);
+    border-radius: 100px;
+    padding:5px;
+}
 /* Fin de Footer */
+@keyframes mover {
+    from{
+        transform: translateY(0)
+    }
+    to{
+        transform: translateY(-30px)
+    }
+}
+@keyframes moverx {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+@media (max-width: 12450px) {
+
+}

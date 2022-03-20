@@ -1,17 +1,17 @@
 @import "basics.css";
+
 h3{
-    font-size:2.5rem;
+    font-size:3rem;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 80px;
     margin-left:80px;
+    margin-top:80px;
 }
 h3:hover{
     letter-spacing: 3px;
 }
-main{
-}
-.container{
+/* .container{
     display:grid;
     row-gap:50px;
     grid-template-columns: repeat(3, 1fr);
@@ -47,7 +47,35 @@ main{
     transform: scale(1.40);
     filter: drop-shadow(2px 1px 10px var(--gold));
     letter-spacing: 4px;
-}
+} */
 footer{
     margin-top:150px;
+}
+.iconos__container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap:70px;
+    width: 80%;
+    height: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: visible;
+}
+.icono__figure{
+    width:100%;
+    height: 100%;
+}
+.icono__img{
+    width:100%;
+    height: 100%;
+    display:block;
+    object-fit:contain;
+}
+.icono__link{
+    width:100%;
+    height: 100%;
+}
+img:hover{
+    animation: 1s mover infinite alternate;
 }
