@@ -32,6 +32,7 @@ h2{
 .texto-principal{
     grid-column: 2 / -1;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
 }
 .texto-principal > p{
     font-size: 1.4rem;
