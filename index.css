@@ -40,7 +40,6 @@ h2{
     margin-right:30px;
     text-align: justify;
     line-height:1.6;
-    text-justify:inter-character;
 }
 .texto-principal > p > a{
     text-decoration: underline;
@@ -103,3 +102,53 @@ h2{
         clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
     }
 }
+
+/* Responsive */
+@media screen and (max-width: 1024px){
+    .texto-principal > p{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size:2.2rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .texto-principal > p{
+        font-size: 1.1rem;
+    }
+    h2{
+        font-size:2.1rem;
+    }
+    .container-main{
+        grid-template-columns: 1fr;
+    }
+    .texto-principal{
+        grid-column: 1 / -1;
+    }
+    .socialm{
+        margin-top: 25px;
+    }
+    img{
+        margin-top:20px;
+    }
+
+}
+@media screen and (max-width: 480px){
+    .texto-principal > p{
+        font-size: 0.8rem;
+    }
+    h2{
+        font-size:1.7rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .texto-principal > p{
+        font-size: 0.6rem;
+    }
+    h2{
+        font-size:1.3rem;
+    }
+}
+
+
+

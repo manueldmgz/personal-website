@@ -32,9 +32,9 @@ article {
     flex-direction: column;
     align-items: stretch;
 }
-header, main, footer {
+/* header, main, footer {
     flex-shrink: 0;
-}
+} */
 /* Inicio de Header */
 /* Header dividido en tres secciones */
 header{
@@ -82,6 +82,7 @@ button {
     white-space: nowrap;
     cursor: pointer;
     transition: all .3s;
+    margin-left:100px;
    }
    button:active,
    button:hover {
@@ -116,28 +117,25 @@ main{
     flex-grow: 1;
 }
 /* Inicio de Footer */
-.lista-contacto{
-    list-style-type: none;
-    margin: 0 auto;
-}
+
 footer{
     background-color:var(--light);
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    width:37%;
-    height:90px;
+    width:47%;
+    height:13%;
     margin: 0 auto;
-    display:flex;
-    font-size: 1.5rem;
-    text-align: justify;
-    line-height:32px;
+    font-size: 25px;
     font-family: 'Bebas Neue', cursive;
-    overflow: visible;
 }
 ul{
-    display: inline-flex;
-    gap: 50px;
-    padding:34px;
+    column-gap: 33px;
+    row-gap: 20px;
+    padding: 4%;
+    margin-left:40px;
+    list-style-type: none;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
 }
 li > a{
     letter-spacing: 0.7px;
@@ -167,6 +165,34 @@ footer > ul > li > a:hover{
     }
 }
 
-@media (max-width: 12450px) {
-
+/* Responsive */
+/* @media screen and (max-width: 1024px){
+    h1{
+        font-size: 2.5rem;
+    }
+} */
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 2rem;
+    }
+    footer{
+        height:30%;
+        text-align: center;
+        margin-top:50px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 1.5rem;
+    }
+    button{
+        font-size:13px;
+        min-width: 110px;
+    }
+}
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 1rem;
+    }
 }
