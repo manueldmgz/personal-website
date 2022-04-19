@@ -28,24 +28,19 @@ body {
 }
 article {
     min-height: 100%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: stretch;
 }
-/* header, main, footer {
-    flex-shrink: 0;
-} */
 /* Inicio de Header */
-/* Header dividido en tres secciones */
 header{
     background-color: var(--light);
-    display: flex;
-    gap:50px;
+    display: grid;
+    grid-template-columns: 70% 1fr 1fr;
     align-items: center;
-    height:120px;
 }
-.title{
-    flex-basis: 75%;
+.container-header{
+    height:157px;
 }
 h1 > a{
     color: var(--yellow);
@@ -69,12 +64,11 @@ button {
     box-sizing: border-box;
     color: #FFFFFF;
     display: flex;
-    /* font-family: Phantomsans, sans-serif; */
-    font-size: 18px;
+    font-family: 'Days One', sans-serif;
     justify-content: center;
-    line-height: 3em;
+    line-height: 5em;
     max-width: 100%;
-    min-width: 140px;
+    min-width: 80%;
     padding: 3px;
     user-select: none;
     -webkit-user-select: none;
@@ -82,7 +76,6 @@ button {
     white-space: nowrap;
     cursor: pointer;
     transition: all .3s;
-    margin-left:100px;
    }
    button:active,
    button:hover {
@@ -105,19 +98,11 @@ button {
    button:active {
     transform: scale(0.9);
    }
-/* .switch{
-    margin-right:20px;
-}
-.switch > p{
-    font-family: 'Days One', sans-serif;
-    font-size: 1.2rem;
-} */
+   .changeUserbtn, .boton{
+       margin-right:30px;
+   }
 /* Fin de Header */
-main{
-    flex-grow: 1;
-}
 /* Inicio de Footer */
-
 footer{
     background-color:var(--light);
     border-top-left-radius: 50px;
@@ -182,14 +167,23 @@ footer > ul > li > a:hover{
         margin-top:50px;
         font-size: 20px;
     }
+    ul{
+        margin-left:0px;
+    }
+    .title{
+        margin-left:50px;
+    }
+    .boton{
+        margin-right:40px;
+    }
 }
 @media screen and (max-width: 480px){
     h1{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     button{
         font-size:13px;
-        min-width: 110px;
+        min-width: 25px;
     }
 }
 @media screen and (max-width: 320px){
