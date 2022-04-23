@@ -8,6 +8,9 @@
     margin: 10px auto 0;
     width: 90%;
 }
+#changeUser{
+    margin-right:-35px;
+}
 img{
     max-width:95%;
     object-fit: contain;
@@ -104,6 +107,9 @@ h2{
     }
 }
 
+footer{
+    margin-top:150px;
+}
 /* Responsive */
 @media screen and (max-width: 1024px){
     .texto-principal > p{

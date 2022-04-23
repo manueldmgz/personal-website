@@ -79,3 +79,6 @@ footer{
 img:hover{
     animation: 1s mover infinite alternate;
 }
+#mx{
+    grid-template-columns: 1;
+}

@@ -15,7 +15,7 @@ let mybtn = document.getElementById('changeUser');
 let myHeading = document.querySelector('h2');
 
 function setUserName() {
-    let myName = prompt('¡Hola!, ¿cómo te llamas?');
+    let myName = prompt('¡Hola! ¿Cómo te llamas?');
     if(!myName) {
         setUserName();
     } else{
