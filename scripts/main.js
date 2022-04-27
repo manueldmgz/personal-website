@@ -1,3 +1,5 @@
+const path = require("path");
+
 let miFoto = document.querySelector('img');
 
 miFoto.onclick = function(){
@@ -34,4 +36,26 @@ mybtn.onclick = function() {
     setUserName();
   }
 
+
+//Dark and light theme
+const select = document.querySelector('select');
+const body = document.querySelector('body');
+
+function actualizarColor (fondo, letra){
+    body.style.backgroundColor = fondo;
+    body.style.color = letra;
+}
+
+select.addEventListener('change', () => ( select.value === 'oscuro') ? actualizarColor('rgb(26, 36, 71)','#FCEFC2') : actualizarColor('rgb(252,239,194, 0.5','rgb(26, 36, 71)'));
+
+alert('bitch')
+
+// const paths = document.getElementsByTagName('path');
+// for(let i=0; i<paths.length; i++){
+//     paths[i].addEventListener('click', cambiarClase);
+// }
+
+// function cambiarClase(){
+//     this.classList.toggle('clicked');
+// }
 
