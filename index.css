@@ -8,9 +8,6 @@
     margin: 10px auto 0;
     width: 90%;
 }
-#changeUser{
-    margin-right:-35px;
-}
 img{
     max-width:95%;
     object-fit: contain;
@@ -110,9 +107,12 @@ h2:hover{
     }
 }
 
-.clicked{
+.paths:hover{
     fill: #0A1869;
 }
+
+
+
 
 footer{
     margin-top:150px;
@@ -143,7 +143,10 @@ footer{
         margin-top: 25px;
     }
     img{
-        margin-top:20px;
+        margin-top: 20px;
+    }
+    header{
+        grid-template-columns: 56% 1fr 1fr;
     }
 
 }
@@ -152,17 +155,27 @@ footer{
         font-size: 0.8rem;
     }
     h2{
-        font-size:1.7rem;
+        font-size:1.9rem;
     }
-}
+    header{
+        grid-template-columns: 46% 1fr 1fr;
+        overflow: hidden;
+    }
+    button{
+        font-size: 11px;
+    }
+    #changeUser{
+        margin-right:10px;
+    }
+    h1{
+        font-size:1.6rem;
+    }
 @media screen and (max-width: 320px){
     .texto-principal > p{
         font-size: 0.6rem;
     }
     h2{
-        font-size:1.3rem;
+        font-size:1.1rem;
     }
 }
-
-
-
+}

@@ -164,26 +164,15 @@ footer > ul > li > a:hover{
     footer{
         height:30%;
         text-align: center;
-        margin-top:50px;
         font-size: 20px;
     }
     ul{
         margin-left:0px;
     }
-    .title{
-        margin-left:50px;
-    }
-    .boton{
-        margin-right:40px;
-    }
 }
 @media screen and (max-width: 480px){
     h1{
         font-size: 1rem;
-    }
-    button{
-        font-size:13px;
-        min-width: 25px;
     }
 }
 @media screen and (max-width: 320px){
